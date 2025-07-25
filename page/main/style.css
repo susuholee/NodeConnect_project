@@ -1,0 +1,434 @@
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+#wrap {
+    height: 100;
+}
+@keyframes neonGlow {
+    0% { text-shadow: 0px 0px 5px rgb(221, 148, 138);}
+    50% { text-shadow: 0px 0px 15px rgb(216, 125, 115); }
+    100% { text-shadow: 0px 0px 5px  rgb(228, 114, 101);}
+}
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nickname {
+    color: white;
+    margin-right: 40px;
+    font-size: 20px;
+    font-family: 'SBAggroB'; 
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#nickname:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    animation: neonGlow 1s ease-in-out;
+}
+
+#titleBar {
+    min-width: 768px;
+    width: 100%;
+    height: 70px;
+    
+    background-color: rgba(0, 0, 0, 0.855);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#bodyContent {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(230, 229, 229);
+}
+h1 {
+
+    cursor: pointer;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+   
+    color: rgba(219, 193, 100, 0.897);
+}
+
+ul {
+    margin: 0 auto;
+}
+.logoutBtn {
+    margin-right: 2.5%;
+}
+.logoutBtn:hover {
+    font-weight: bolder;
+    user-select: none;
+}
+#Content {
+    width: 100%;
+    height: 100vh;
+    background-color: #9ecdd6;
+    display: none;
+}
+
+.divInput {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    
+    
+    padding: 5px;
+    border-radius: 10px;
+}
+#inputSearch {
+    width: 380px;
+    height: 35px;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 0;
+    
+}
+.inputContent {
+    width: 480px;
+    height: 650px;
+    border: 10px solid rgba(65, 19, 5, 0.87);
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 250px;
+    background-color: rgba(162, 162, 187, 0.596);
+    justify-content: space-around;
+    align-items: center;    
+    box-sizing: border-box;
+    
+}
+.inputName {
+    width: 220px;
+    height: 25px;
+    padding: 2px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+.labeltextArea {
+    margin-left: 60px;
+    box-sizing: border-box;
+}
+.textArea {
+    font-size: 16px;
+    width: 350px;
+    height: 120px;
+    outline: none;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.Icon {
+    margin: 10px 15px;
+    color: rgb(224, 221, 221);
+    box-sizing: border-box;
+}
+.saveBtn, .deleteBtn, .closeBtn {
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+}
+.closeBtn {
+    display: inline-bl;
+}
+.hamBtn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.hamBtn > span {
+    top: 50%;
+    width: 30px;
+    height: 4px;
+    background-color: rgb(224, 221, 221);
+    position: absolute; 
+    transform: translateY(-50%);
+    /* display: none; */
+}
+.hamBtn span:nth-child(1) {
+    position: absolute;
+    top: 23%;transform: translateY(-50%);
+}
+.hamBtn span:nth-child(3) {
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+}
+
+
+
+.hamBtn:hover  > span {
+    background-color: rgb(148, 148, 148);
+}
+
+
+
+.isactive .hamBtn > :nth-child(1) {
+    transform: translateY(50%) rotate(-45deg);
+    top: 35%;
+    
+}
+.isactive .hamBtn > span:nth-child(3) {
+    transform: translateY(-50%) rotate(45deg);
+    top: 50%;
+    
+}
+
+.isactive .hamBtn span:nth-child(2) {
+    display: none;
+}
+.hamBtnCotent {
+    width: 100%;
+    position: relative;
+    
+}
+.hamBtnContentul {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+    display: none;
+    background-color: rgb(34, 33, 33);
+}
+.hamBtnContentul li {
+    width: 100%;
+    height: 25%;
+    font-size: 22px;
+    padding: 8px;
+    user-select: none;
+    font-weight: 600;
+    color: rgb(233, 234, 235);
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+.hamBtnContentul li:hover {
+    color: rgb(121, 178, 227);
+}
+.isactive .hamBtnContentul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.activeLogout #Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activeLogout #bodyContent {
+    display: none;
+}
+
+#displayContent {
+    max-width: 1235px;
+    width: 65%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+#contentUl {
+    width: 250px;
+    height: max-content;
+    font-size: 20px;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+   
+    
+}
+#contentUl li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Img {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 3px;
+    box-sizing: border-box;
+}
+
+.edit > .Img {
+    display: none;
+}
+.edit > .Name {
+    display: none;
+}
+.edit > .Details {
+    display: none;
+}
+.edit > .Editdeletebtn {
+    display: none;
+}
+
+.Editdeletebtn {
+    height: 30px;
+    border-radius: 8px 8px 0 0;
+    background-color: rgb(212, 209, 205);
+    box-sizing: border-box;
+}
+.Editdeletebtn li {
+   
+    user-select: none;
+    /* display: inline-block; */
+    float: right;
+    border: 1px solid;
+    font-size: 16px;
+    margin: 0 5px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    background-color: #037b94;
+    color: aliceblue;
+    box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+.Editdeletebtn li:hover {
+    background-color: #3492a5;
+}
+
+
+
+.Editdeletebtn span {
+    user-select: none;
+}
+
+#updateForm {
+    height: 450px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid;
+    box-sizing: border-box;
+
+}
+
+#updateForm input {
+    width: 80%;
+    height: 25px;
+    outline: none;
+   
+}
+
+#updateForm textarea {
+    width: 220px;
+    height: 90px;
+    outline: none;
+}
+.saveBtn {
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+#Footer {
+    min-width: 768px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(41, 40, 40);
+    color: rgb(208, 213, 219);
+    font-size: 16px;
+    padding-top: 20px;
+    box-sizing: border-box;
+   
+}
+
+.Footerul {
+    width: 100%;
+    margin: 14px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+.Footerul li {
+    justify-content: space-around;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+p {
+    margin-top: 10px;
+    margin-left: 11% ;
+    box-sizing: border-box;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagination span {
+    width: 25px;
+    height: 25px;
+    margin: 10px 5px;
+    font-size: 20px;
+    user-select: none;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#pagination span:hover {
+    background-color: rgb(197, 197, 197);
+}
+
+.Name {
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: rgb(212, 209, 205);
+}
+.Details {
+    height: 35px;
+    border-top: 1px solid #247c8d;
+    border-top: none;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border-radius: 0 0 8px 8px;
+    background-color: rgb(212, 209, 205);
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+

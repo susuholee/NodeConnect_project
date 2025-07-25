@@ -1,0 +1,523 @@
+ /* 기본 스타일: 모바일 화면(작은 화면) */
+body {
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+}
+
+/* 화면이 768px 이상일 때 적용 (태블릿 이상) */
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        width: 75%;
+    }
+}
+
+/* 화면이 1024px 이상일 때 적용 (데스크탑) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+    .container {
+        width: 50%;
+    }
+}
+
+/* 모달 팝업 스타일 */
+.write {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* 모달이 기본적으로 숨겨짐 */
+    justify-content: center;
+    align-items: center;
+}
+
+.write_form {
+    width: 80%;
+    height: 90%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.inquiry_write {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.inquiry_write label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.inquiry_input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.inquiry_input:focus {
+    border-color: #5877f9;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    min-height: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #5877f9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4057a1;
+}
+
+#close_inquiry_form, #subsubmit_inquiry {
+    background-color: #f44336;
+}
+
+#close_inquiry_form:hover {
+    background-color: #d32f2f;
+}
+
+#submit_inquiry:hover {
+    background-color: #d32f2f;
+}
+
+/* 모달 닫기 버튼 위치 */
+#close_inquiry_form, #subsubmit_inquiry {
+    position: absolute;
+    margin-top: 600px;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#close_inquiry_form:hover {
+    color: #f44336;
+}
+
+/* 모달 팝업 스타일 끝 */
+
+#inquiry_list {
+ border-bottom: 1px solid red;
+}
+
+/* 문의 목록 헤더 스타일 */
+#inquiry_list_header {
+    width: 1200px; 
+    height: 30px;
+    background-color: rgb(80, 80, 80, 0.1);  
+    padding: 10px 0;  /* 상하 여백 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}
+
+/* 리스트 항목 스타일 */
+#inquiry_list_header ul {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 리스트 항목 li 공통 스타일 */
+#inquiry_list_header li {
+    font-size: 14px;  
+    font-weight: bold;  
+    color: #333; 
+    text-align: center;  
+    border-right: 1px solid #ddd;  
+    transition: background-color 0.3s ease;  
+}
+
+/* 마지막 항목에는 오른쪽 경계선 제거 */
+#inquiry_list_header li:last-child {
+    border-right: none;
+}
+
+/* 각 항목의 너비 비율 설정 */
+#inquiry_list_header li:nth-child(1) {
+    width: 5%;
+}
+
+#inquiry_list_header li:nth-child(2) {
+    width: 15%;
+}
+
+#inquiry_list_header li:nth-child(3) {
+    width: 25%;
+}
+
+#inquiry_list_header li:nth-child(4) {
+    width: 40%;
+}
+
+#inquiry_list_header li:nth-child(5) {
+    width: 15%;
+}
+
+/* 리스트 항목 hover 효과 */
+#inquiry_list_header li:hover {
+    background-color: rgba(0, 0, 0, 0.1);  /* 마우스를 올리면 배경이 살짝 어두워짐 */
+    cursor: pointer; 
+}
+
+/* 반응형 스타일 (작은 화면에서의 처리) */
+@media (max-width: 768px) {
+    #inquiry_list_header {
+        padding: 5px 0; 
+    }
+
+    #inquiry_list_header ul {
+        flex-direction: column; 
+        align-items: flex-start;  
+    }
+
+    #inquiry_list_header li {
+        width: 100%;  
+        padding: 8px 10px; 
+        text-align: left;  
+        border-right: none; 
+    }
+}
+
+
+#inquiry_form {
+    margin-left: 1100px;
+    margin-bottom: 10px;
+}
+
+.open_inquiry_form_btn {
+    padding:10px 15px 10px 15px;
+    min-width: 100px;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #5d5d5d;
+    box-shadow: 0px -3px 3px #ffffff, 0px 3px 3px #8f1b1b;
+}
+
+
+
+#content_wrap {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 700px;
+    list-style: none; 
+}
+#content_wrap ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 1200px;
+    padding: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+#content_wrap li:nth-child(1) {
+    width: 5%;
+}
+#content_wrap li:nth-child(2) {
+    width: 15%;
+}
+#content_wrap li:nth-child(3) {
+    width: 25%;
+}
+#content_wrap li:nth-child(4) {
+    width: 40%;
+}
+#content_wrap li:nth-child(5) {
+    width: 15%;
+} 
+
+#header {
+    width:100%;
+    
+}
+
+#Footer {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(41, 40, 40);
+    color: rgb(208, 213, 219);
+    font-size: 16px;
+  
+    padding-top: 20px;
+
+   
+}
+.Footerul {
+    width: 100%;
+    margin: 14px;
+    display: flex;
+    justify-content: space-around;
+}
+.Footerul li {
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+p {
+    margin-top: 10px;
+    margin-left: 11% ;
+}
+
+ #middle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ /* 팝업 안에 제목 input 사이즈 */
+.inquiry_write #title {
+    width: 400px;
+    height: 20px;
+}
+
+/* textarea 크기 고정 및 사이즈 크기 지정 */
+.inquiry_write #content {
+    width: 400px;
+    height: 300px;
+    resize: none;
+}  
+/* .inquiry_write #submit_inquiry {
+    margin-left: 320px;
+    margin-bottom: 30px;
+} */
+
+
+
+.inquiry_write #submit_inquiry, #close_inquiry_form  {
+    padding:8px 15px 8px 15px;
+    min-width: 100px;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color:#5877f9;
+    border:2px solid #5877f9;
+    color:#ffffff;
+}
+
+
+#pagination {
+    display: flex;
+}
+
+
+#pagination span {
+    display: block;
+    padding: 10px;
+    border: 1px solid;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#pagination span:hover {
+    background-color: aqua;
+}
+
+/* -----------------------------비노드 님꺼------------------------------------ */
+
+#bodyContent {
+    background-color: rgb(230, 229, 229);
+}
+
+#titleBar {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.855);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    cursor: pointer;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 3%;
+    color: rgba(219, 193, 100, 0.897);
+}
+
+.divInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 230px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.inputSearch {
+    width: 380px;
+    height: 35px;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.Icon {
+    margin: 10px 5px;
+    color: rgb(224, 221, 221);
+}
+
+.hamBtn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.hamBtn span {
+    top: 50%;
+    width: 30px;
+    height: 4px;
+    background-color: rgb(224, 221, 221);
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.hamBtn span:nth-child(1) {
+    position: absolute;
+    top: 23%;
+    transform: translateY(-50%);
+}
+
+.hamBtn span:nth-child(3) {
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+}
+
+.hamBtn:hover > span {
+    background-color: rgb(148, 148, 148);
+}
+
+.isactive span:nth-child(1) {
+    transform: translateY(50%) rotate(-45deg);
+    top: 35%;
+}
+
+.isactive span:nth-child(3) {
+    transform: translateY(-50%) rotate(45deg);
+    top: 50%;
+}
+
+.isactive .hamBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamBtnContent {
+    width: 100%;
+    position: relative;
+}
+
+.hamBtnContentul {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+    display: none;
+    background-color: rgb(34, 33, 33);
+}
+
+.hamBtnContentul li {
+    width: 100%;
+    height: 25%;
+    font-size: 22px;
+    padding: 8px;
+    user-select: none;
+    font-weight: 600;
+    color: rgb(233, 234, 235);
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.hamBtnContentul li:hover {
+    color: rgb(121, 178, 227);
+}
+
+.isactive .hamBtnContentul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#displayContent {
+    width: 65%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#hamBtnContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+
