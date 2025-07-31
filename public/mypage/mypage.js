@@ -136,7 +136,7 @@ saveButton.addEventListener("click", () => {
 
 // ---------- CLOSE: 닫기 버튼 기능 ---------- //
 closeButton.addEventListener("click", () => {
-  window.location.href = "../main/index.html";
+  window.location.href = "../index.html";
   modal.remove();
 });
 
