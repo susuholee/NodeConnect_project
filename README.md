@@ -14,7 +14,7 @@ https://nodeconnectproject.vercel.app/
 - [주요 기능](#주요-기능)
 - [화면 구성](#화면-구성)
 - [담당 기능 설명](#담당-기능-설명)
-- [사용 기술](#사용-기술)
+- [기술 스택](#기술-스택)
 - [실행 방법](#실행-방법)
 - [이슈 상황](#이슈-상황)
 - [개선 방향](#개선-방향)
@@ -72,10 +72,13 @@ https://nodeconnectproject.vercel.app/
 ### 로그아웃 기능
 - 데이터 초기화 후 로그인 페이지로 리다이렉션
 
-## 사용 기술
-- HTML5
-- CSS3
-- JavaScript
+## 기술 스택
+<p>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/LocalStorage/Cookie-ffb400?style=for-the-badge" alt="LocalStorage / Cookie" />
+</p>
 - LocalStorage / cookie
 
 ### 배포 링크
@@ -99,7 +102,11 @@ cd NodeConnect_project
 ```
 3. 브라우저에서 page/main/index.html 파일 열기
 또는 VSCode의 Live Server 확장으로 실행
+
 ---
+
+### 이슈 상황
+
 1. **아이디 중복 가입 허용**  
    - 동일한 아이디로 여러 계정 생성 가능 → 인증 오류 발생 가능성
 
