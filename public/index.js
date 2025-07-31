@@ -214,7 +214,7 @@ const render = (datA) => {
         const {name, image, details} = datA[i];
         
         Name.innerHTML = name;
-        Img.src = "./images/" + image;
+        Img.src = "./img/" + image;
         Details.innerHTML = details;
         editbtn.innerHTML = "수정";
         editbtn.classList.add("Edit");
