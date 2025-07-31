@@ -6,19 +6,19 @@
         },
         {
             "source": "/login",
-            "destination": "/login/login.html"
+            "destination": "/page/login/login.html"
         },
         {
             "source": "/signup",
-            "destination": "/signup/signup.html"
+            "destination": "/page/signup/signup.html"
         },
         {
             "source": "/mypage",
-            "destination": "/mypage/mypage.html"
+            "destination": "/page/mypage/mypage.html"
         },
         {
             "source": "/inquiry",
-            "destination": "/inquirymain/inquiry.html"
+            "destination": "/page/inquirymain/inquiry.html"
         }
     ]
 }
