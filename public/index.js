@@ -29,7 +29,7 @@ if (userCookie) {
     if (nickname) {
         nickname.innerHTML = "로그인이 필요합니다!";
         nickname.addEventListener("click", () => {
-            location.href = "../login/login.html";
+            location.href = "./login/login.html";
         })
     }
 }

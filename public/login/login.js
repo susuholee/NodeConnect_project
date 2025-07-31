@@ -19,7 +19,7 @@ document.querySelector(".login-btn").addEventListener("click", () => {
     document.cookie = `User=${userName}& ${userId}; expires=${date.toUTCString()}; path=/;`;
 
     // 메인 페이지로 이동
-    location.href = "../main/index.html";
+    location.href = "../index.html";
   };
 
   for (let i = 0; i < users.length; i++) {
