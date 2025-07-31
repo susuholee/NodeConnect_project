@@ -41,13 +41,13 @@ https://nodeconnectproject.vercel.app/
 ## 화면 구성
 
 ### 로그인 페이지
-![로그인 기능](./images/login.gif)
+![로그인 기능](./public/images/login.gif)
 
 ### 회원가입 페이지
-![회원가입 기능](./images/signup.gif)
+![회원가입 기능](./public/images/signup.gif)
 
 ### 마이페이지 
-![사용자 정보 조회 및 수정 기능](./images/mypage.gif)
+![사용자 정보 조회 및 수정 기능](./public/images/mypage.gif)
 
 ## 담당 기능 설명
 
@@ -74,9 +74,9 @@ https://nodeconnectproject.vercel.app/
 
 ## 기술 스택
 <p>
-   <img src="./images/html.png" alt="HTML5" width="50"/>
-  <img src="./images/CSS3.png" alt="CSS3" width="50"/>
-  <img src="./images/JavaScript.png" alt="JavaScript" width="50"/>
+   <img src="./public/images/html.png" alt="HTML5" width="50"/>
+  <img src="./public/images/CSS3.png" alt="CSS3" width="50"/>
+  <img src="./public/images/JavaScript.png" alt="JavaScript" width="50"/>
 </p>
 
 ### 배포 링크
