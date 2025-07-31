@@ -1,4 +1,4 @@
-![로고](./images/logo.jpg)
+![로고](./public/images/logo.jpg)
 
 `node_connect`는 HTML, CSS, JavaScript로 구현된 영화 추천 웹 플랫폼입니다. 서버 없이 작동하며, LocalStorage와 cookie를 이용해 사용자 정보를 저장합니다. 간편한 UI를 통해 로그인, 회원가입, 마이페이지 등 기본적인 사용자 기능을 제공합니다.
 
