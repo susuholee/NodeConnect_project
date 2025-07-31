@@ -2,23 +2,23 @@
     "rewrites": [
         {
             "source": "/",
-            "destination": "/page/main/index.html"
+            "destination": "/main/index.html"
         },
         {
             "source": "/login",
-            "destination": "/page/login/login.html"
+            "destination": "/login/login.html"
         },
         {
             "source": "/signup",
-            "destination": "/page/signup/signup.html"
+            "destination": "/signup/signup.html"
         },
         {
             "source": "/mypage",
-            "destination": "/page/mypage/mypage.html"
+            "destination": "/mypage/mypage.html"
         },
         {
             "source": "/inquiry",
-            "destination": "/page/inquirymain/inquiry.html"
+            "destination": "/inquirymain/inquiry.html"
         }
     ]
 }
