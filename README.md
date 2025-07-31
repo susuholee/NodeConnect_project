@@ -74,12 +74,10 @@ https://nodeconnectproject.vercel.app/
 
 ## 기술 스택
 <p>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/LocalStorage/Cookie-ffb400?style=for-the-badge" alt="LocalStorage / Cookie" />
+   <img src="./images/html.png" alt="HTML5" width="50"/>
+  <img src="./images/CSS3.png" alt="CSS3" width="50"/>
+  <img src="./images/JavaScript.png" alt="JavaScript" width="50"/>
 </p>
-- LocalStorage / cookie
 
 ### 배포 링크
 
