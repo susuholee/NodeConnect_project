@@ -14,6 +14,7 @@ https://nodeconnectproject.vercel.app/
 - [주요 기능](#주요-기능)
 - [화면 구성](#화면-구성)
 - [담당 기능 설명](#담당-기능-설명)
+- [팀원 소개](#팀원-소개)
 - [기술 스택](#기술-스택)
 - [실행 방법](#실행-방법)
 - [이슈 상황](#이슈-상황)
@@ -71,6 +72,16 @@ https://nodeconnectproject.vercel.app/
 
 ### 로그아웃 기능
 - 데이터 초기화 후 로그인 페이지로 리다이렉션
+
+## 팀원 소개
+---
+| 팀원 | 역할 | GitHub |
+|------|------|--------|
+| <img src="https://github.com/kooming.png" width="100"> | <br>구다경 | [@kooming](https://github.com/kooming) |
+| <img src="https://github.com/Mr-Binod.png" width="100"> | <br>비노드| [@Mr-Binod](https://github.com/Mr-Binod) |
+| <img src="https://github.com/sangam0919.png" width="100"> |<br>이상암| [@sangam0919](https://github.com/sangam0919) |
+| <img src="https://github.com/susuholee.png" width="100"> |<br>이수호 | [@susuholee](https://github.com/susuholee) |
+| <img src="https://github.com/LeeJH0309.png" width="100"> |<br>이준헌 | [@LeeJH0309](https://github.com/LeeJH0309) |
 
 ## 기술 스택
 <p>
